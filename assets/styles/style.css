@@ -1,0 +1,229 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  border: 0;
+}
+button:focus,
+input:focus {
+  border: 0;
+}
+body {
+  background: linear-gradient(150.02deg, #628E75 0.66%, #1A4855 83.32%);
+  background-repeat: no-repeat;
+  box-shadow: 26px 24px 90px rgba(31, 26, 51, 0.13);
+  font-size: 1.6rem;
+}
+header{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.header_container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin-left: 165px;
+  margin-right: 186px;
+  width: 100%;
+}
+.header_container > img {
+  margin-top: 41px;
+}
+.header_container nav ul{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56px;
+  width:140px;
+}
+.header_container img{
+  height: 48.11px;
+  width: 100px;
+}
+.header_container nav li img{
+  cursor: pointer;
+  height: 15px;
+  width: 20px;
+}
+main{
+  display: flex;
+  justify-content: center;
+}
+.container_main{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin-left: 165px;
+  margin-right: 165px;
+  width: 100%;
+}
+.container_main .container_main_left{
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+}
+.container_main .container_main_left h2{
+  color: #F9F9F9;
+  cursor: default;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.container_main .container_main_left h1{
+  color: #F9F9F9;
+  cursor: default;
+  font-family: Poppins;
+  font-size: 68px;
+  font-weight: 900;
+  line-height: 74px;
+  letter-spacing: 0em;
+  margin-bottom: 25px;
+  text-align: left;
+  width: 443px;
+}
+.container_main .container_main_left p{
+  color: #F9F9F9;
+  cursor: default;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  margin-bottom: 46px;
+  text-align: left;
+  width: 445px;
+}
+.container_main_buttons{
+ display: flex;
+ margin-bottom: 160px;
+}
+.container_main_buttons button:first-child{
+  align-items: center;
+  background: #658E76;
+  color: #F9F9F9;
+  cursor: pointer;
+  display: flex;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 29px;
+  justify-content: center;
+  letter-spacing: 0em;
+  height: 45px;
+  width: 225px;
+  text-transform: uppercase;
+  transform: skew(-24deg);
+}
+.container_main_buttons button:first-child span{
+  display: flex;
+}
+.container_main_buttons button:first-child span img{
+  margin-right: 15px;
+}
+.container_main_buttons button:last-child{
+  align-items: center;
+  background: transparent;
+  border: 2px solid #658E76;
+  color: #F9F9F9;
+  cursor: pointer;
+  display: flex;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0em;
+  justify-content: center;
+  margin-left: 25px;
+  height: 45px;
+  width: 225px;
+  text-transform: uppercase;
+  transform: skew(-24deg);
+}
+.container_main_buttons button span{
+  transform: skew(24deg);
+}
+.container_main .container_main_right {
+  margin-top: 136px;
+}
+.container_main .container_main_right img {
+  height: 370px;
+  max-width: 500px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1270px){
+  .header_container{
+    max-width: 414px;
+    margin-left: 25px;
+    margin-right: 26px;
+  }
+  .container_main{
+    flex-direction: column-reverse;
+    margin-left: 25px;
+    margin-right: 25px;
+    max-width: 414px;
+  }
+  .container_main .container_main_right{
+    display: flex;
+    justify-content: center;
+    margin-top: 27px;
+  }
+  .container_main .container_main_right img{
+    height: 222px;
+    width: 300px;
+  }
+  .container_main .container_main_left{
+    margin-top: 26px;
+  }
+  .container_main .container_main_left h2{
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .container_main .container_main_left h1{
+    font-size: 56px;
+    margin-bottom: 16px;
+    width: 365px;
+  }
+  .container_main .container_main_left p{
+    font-size: 14px;
+    margin-bottom: 58px;
+    width: 362px;
+  }
+  .container_main_buttons button:last-child{
+    display: none;
+  }
+  
+}
