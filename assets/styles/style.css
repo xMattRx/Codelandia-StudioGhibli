@@ -81,6 +81,7 @@ header{
 main{
   display: flex;
   justify-content: center;
+  min-height: 100vh;
 }
 .container_main{
   display: flex;
@@ -191,7 +192,7 @@ main{
 }
 @media screen and (min-width: 1270px){
   .container_main{
-    height: 100vh;
+    min-height: 100vh;
   }
 }
 
